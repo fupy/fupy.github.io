@@ -22,5 +22,5 @@ The aim of this project is to make MicroPython run on FPGAs using the [LiteX] & 
 
 These targets don't need any physical hardware and are good for testing / developing.
 
- * [LiteX QEmu emulation]()
- * [Verilator Verilog Simulator]()
+ * [LiteX QEmu emulation](https://github.com/shenki/qemu-litex) (see [MicroPython on FPGAs Wiki Page](https://github.com/shenki/micropython/wiki/Micropython-on-FPGAs) for notes on getting started)
+ * [Verilator Verilog Simulator](https://www.veripool.org/wiki/verilator)
