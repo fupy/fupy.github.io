@@ -13,7 +13,7 @@ The aim of this project is to make MicroPython run on FPGAs using the [LiteX] & 
 ## Contact
 
  * [MicroPython on FPGA Mailing List](https://groups.google.com/forum/#!forum/upy-fpga/join)
- * [MicroPython on FPGA Chat Channel](irc://irc.freenode.net/#upy-fpga) ([WebChat](https://webchat.freenode.net/?channels=#upy-fpga))
+ * [MicroPython on FPGA Chat Channel, #upy-fpga on FreeNode](irc://irc.freenode.net/#upy-fpga) ([WebChat](https://webchat.freenode.net/?channels=#upy-fpga))
 
 ## Current Targets
 
