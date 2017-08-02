@@ -3,7 +3,7 @@
 * [MicroPython](http://micropython.org/)
 * [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array)
 
-The aim of this project is to make MicroPython run on FPGAs using the [LiteX] & [Migen+MiSoC] technologies. This allows you to do full stack development (FPGA gateware & soft CPU firmware) in Python!
+The aim of this project is to make MicroPython run on FPGAs using the [LiteX](https://github.com/enjoy-digital/litex) & [Migen+MiSoC](http://m-labs.hk/gateware.html) technologies. This allows you to do full stack development (FPGA gateware & soft CPU firmware) in Python!
 
 ## More Information
 
