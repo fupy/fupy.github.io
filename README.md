@@ -5,6 +5,41 @@
 
 The aim of this project is to make MicroPython run on FPGAs using the [LiteX](https://github.com/enjoy-digital/litex) & [Migen+MiSoC](http://m-labs.hk/gateware.html) technologies. This allows you to do full stack development (FPGA gateware & soft CPU firmware) in Python!
 
+## Gateware
+
+`Gateware` is the name we use for the hardware code that is loaded onto the FPGA that MicroPython runs on.
+
+For MicroPython development we use a slightly modified version of the [`HDMI2USB-litex-firmware`](https://github.com/timvideos/HDMI2USB-litex-firmware) from the [HDMI2USB project](https://hdmi2usb.tv).
+
+## Getting Started
+
+### Developing in MicroPython environment
+
+ (x) get lm32 toolchain
+ (x) git clone https://github.com/upy-fpga/micropython.git
+ (x) cd litex
+ (x) Download prebuilt gateware + headers using `get-gateware.sh`
+ (x) Compile micropython
+ (x) Build flash image
+
+
+### Developing in HDMI2USB LiteX environment
+
+ (1) Follow [getting started instructions](https://github.com/upy-fpga/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
+
+ (2) Enter the gateware environment with ./scripts/enter-env.sh
+
+ (3) Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
+
+ (4) Run ./scripts/build-micropython.sh
+
+This will give you an image for your target at `./build/$PLATFORM_$TARGET_lm32/micropython.bin` which you can then flash to your board.
+
+#### Running MicroPython inside QEmu environment
+
+The HDMI2USB LiteX environment provides some limited QEmu emulation of the FPGA gateware. This means you can test your code without needing hardware.
+
+
 ## More Information
 
  * [Wiki](https://github.com/upy-fpga/issues-wiki/wiki)
