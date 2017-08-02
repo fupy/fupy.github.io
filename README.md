@@ -17,24 +17,20 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
 ### Developing in MicroPython environment
 
- (x) get lm32 toolchain
- (x) git clone https://github.com/upy-fpga/micropython.git
- (x) cd litex
- (x) Download prebuilt gateware + headers using `get-gateware.sh`
- (x) Compile micropython
- (x) Load micropython
+ * get lm32 toolchain
+ * git clone https://github.com/upy-fpga/micropython.git
+ * cd litex
+ * Download prebuilt gateware + headers using `get-gateware.sh`
+ * Compile micropython
+ * Load micropython
 
 ### Developing in HDMI2USB LiteX environment
 
- (1) Follow [getting started instructions](https://github.com/upy-fpga/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
-
- (2) Enter the gateware environment with ./scripts/enter-env.sh
-
- (3) Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
-
- (4) Build the gateware with `make gateware`
-
- (5) Run ./scripts/build-micropython.sh
+ 1. Follow [getting started instructions](https://github.com/upy-fpga/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
+ 2. Enter the gateware environment with ./scripts/enter-env.sh
+ 3. Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
+ 4. Build the gateware with `make gateware`
+ 5. Run ./scripts/build-micropython.sh
 
 This will give you an image for your target at `./build/$PLATFORM_$TARGET_lm32/micropython.bin` which you can then flash to your board.
 
