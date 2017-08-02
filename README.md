@@ -20,7 +20,7 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
  (x) cd litex
  (x) Download prebuilt gateware + headers using `get-gateware.sh`
  (x) Compile micropython
- (x) Build flash image
+ (x) Load micropython
 
 
 ### Developing in HDMI2USB LiteX environment
@@ -31,14 +31,17 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
  (3) Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
 
- (4) Run ./scripts/build-micropython.sh
+ (4) Build the gateware with `make gateware`
+
+ (5) Run ./scripts/build-micropython.sh
 
 This will give you an image for your target at `./build/$PLATFORM_$TARGET_lm32/micropython.bin` which you can then flash to your board.
 
 #### Running MicroPython inside QEmu environment
 
-The HDMI2USB LiteX environment provides some limited QEmu emulation of the FPGA gateware. This means you can test your code without needing hardware.
+The HDMI2USB LiteX environment provides some limited QEmu emulation of the FPGA gateware, this means you can test your code without needing hardware.
 
+It can be used with the MicroPython image by running `./scripts/build-qemu.sh` and then replacing `-kernel qemu.bin` with `-kernel micropython.bin` in the last command.
 
 ## More Information
 
