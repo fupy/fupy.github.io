@@ -13,6 +13,8 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
 ## Getting Started
 
+ * Ewen wrote [detailed instructions for the MimasV2](MimasV2.md)
+
 ### Developing in MicroPython environment
 
  (x) get lm32 toolchain
@@ -21,7 +23,6 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
  (x) Download prebuilt gateware + headers using `get-gateware.sh`
  (x) Compile micropython
  (x) Load micropython
-
 
 ### Developing in HDMI2USB LiteX environment
 
