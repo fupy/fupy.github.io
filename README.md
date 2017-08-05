@@ -40,6 +40,8 @@ The HDMI2USB LiteX environment provides some limited QEmu emulation of the FPGA 
 
 It can be used with the MicroPython image by running `./scripts/build-qemu.sh` and then replacing `-kernel qemu.bin` with `-kernel micropython.bin` in the last command.
 
+See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qemu-litex/blob/master/README.md)
+
 ## More Information
 
  * [Wiki](https://github.com/upy-fpga/issues-wiki/wiki)
