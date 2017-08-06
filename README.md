@@ -58,8 +58,8 @@ See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qem
 
 ### Hardware Targets
 
- * [MimasV2](http://numato.com/mimas-v2-spartan-6-fpga-development-board-with-ddr-sdram/) - $50 USD, Spartan 6 board with DDR memory.
- 
+ * [MimasV2](http://numato.com/mimas-v2-spartan-6-fpga-development-board-with-ddr-sdram/) - $50 USD, Spartan 6 board with DDR memory.<br>![Mimas V2 Image](img/mimasv2.png)
+
  * Future [MicroPython on FPGA targets are documented in this spreadsheet](https://docs.google.com/spreadsheets/d/10aMU7oPXAhfRbQEVXkMQlRsin2yCkN39B6W1KXiR6d4/edit#gid=0).
  
 ### Software Targets
