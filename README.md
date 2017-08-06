@@ -1,6 +1,6 @@
 ## Welcome to MicroPython on FPGAs
 
-![MicroPython and Migen, sitting in a tree!](img/micropython-migen-sitting-in-tree.png)
+[![MicroPython and Migen, sitting in a tree!](img/micropython-migen-sitting-in-tree.png)](https://github.com/upy-fpga)]
 
 * [MicroPython](http://micropython.org/)
 * [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array)
