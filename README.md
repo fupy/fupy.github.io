@@ -1,4 +1,4 @@
-## Welcome to FPGA MicroPython (FuPy)
+## Welcome to FPGA MicroPython (FμPy)
 
 [![MicroPython and Migen, sitting in a tree!](img/micropython-migen-sitting-in-tree.png)](https://github.com/fupy)]
 
