@@ -1,6 +1,6 @@
-## Welcome to MicroPython on FPGAs
+## Welcome to FPGA MicroPython
 
-[![MicroPython and Migen, sitting in a tree!](img/micropython-migen-sitting-in-tree.png)](https://github.com/upy-fpga)]
+[![MicroPython and Migen, sitting in a tree!](img/micropython-migen-sitting-in-tree.png)](https://github.com/fupy)]
 
 * [MicroPython](http://micropython.org/)
 * [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array)
@@ -15,12 +15,14 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
 ## Getting Started
 
- * Ewen wrote [detailed instructions for the MimasV2](MimasV2.md)
+ * Ewen wrote [detailed instructions for the MimasV2](MimasV2.md) (*note*:
+   since this was written the repository has been renamed from `upy-fpga`
+   to `fupy`, so the instructions will need translating)
 
 ### Developing in MicroPython environment
 
  * get lm32 toolchain
- * git clone https://github.com/upy-fpga/micropython.git
+ * git clone https://github.com/fupy/micropython.git
  * cd litex
  * Download prebuilt gateware + headers using `get-gateware.sh`
  * Compile micropython
@@ -28,7 +30,7 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
 ### Developing in HDMI2USB LiteX environment
 
- 1. Follow [getting started instructions](https://github.com/upy-fpga/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
+ 1. Follow [getting started instructions](https://github.com/fupy/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
  2. Enter the gateware environment with ./scripts/enter-env.sh
  3. Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
  4. Build the gateware with `make gateware`
@@ -46,13 +48,13 @@ See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qem
 
 ## More Information
 
- * [Wiki](https://github.com/upy-fpga/issues-wiki/wiki)
- * [GitHub Issues](https://github.com/upy-fpga/issues-wiki/issues)
+ * [Wiki](https://github.com/fupy/issues-wiki/wiki)
+ * [GitHub Issues](https://github.com/fupy/issues-wiki/issues)
 
 ## Contact
 
  * [MicroPython on FPGA Mailing List](https://groups.google.com/forum/#!forum/upy-fpga/join)
- * [MicroPython on FPGA Chat Channel, #upy-fpga on FreeNode](irc://irc.freenode.net/#upy-fpga) ([WebChat](https://webchat.freenode.net/?channels=#upy-fpga))
+ * [MicroPython on FPGA Chat Channel, #fupy on FreeNode](irc://irc.freenode.net/#fupy) ([WebChat](https://webchat.freenode.net/?channels=#fupy))
 
 ## Current Targets
 
@@ -60,7 +62,7 @@ See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qem
 
  * [MimasV2](http://numato.com/mimas-v2-spartan-6-fpga-development-board-with-ddr-sdram/) - $50 USD, Spartan 6 board with DDR memory.<br>![Mimas V2 Image](img/mimasv2.png)
 
- * Future [MicroPython on FPGA targets are documented in this spreadsheet](https://docs.google.com/spreadsheets/d/10aMU7oPXAhfRbQEVXkMQlRsin2yCkN39B6W1KXiR6d4/edit#gid=0).
+ * Future [FPGA MicroPython targets are documented in this spreadsheet](https://docs.google.com/spreadsheets/d/10aMU7oPXAhfRbQEVXkMQlRsin2yCkN39B6W1KXiR6d4/edit#gid=0).
  
 ### Software Targets
 
