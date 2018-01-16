@@ -34,7 +34,7 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
  2. Enter the gateware environment with ./scripts/enter-env.sh
  3. Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
  4. Build the gateware with `make gateware`
- 5. Run ./scripts/build-micropython.sh
+ 5. Run `./scripts/build-micropython.sh`
 
 This will give you an image for your target at `./build/$PLATFORM_$TARGET_lm32/micropython.bin` which you can then flash to your board.
 
@@ -53,7 +53,7 @@ See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qem
 
 ## Contact
 
- * [MicroPython on FPGA Mailing List](https://groups.google.com/forum/#!forum/upy-fpga/join)
+ * [MicroPython on FPGA Mailing List](https://groups.google.com/forum/#!forum/fupy/join)
  * [MicroPython on FPGA Chat Channel, #fupy on FreeNode](irc://irc.freenode.net/#fupy) ([WebChat](https://webchat.freenode.net/?channels=#fupy))
 
 ## Current Targets
