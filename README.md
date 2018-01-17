@@ -15,9 +15,16 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
 
 ## Getting Started
 
- * Ewen wrote [detailed instructions for the MimasV2](MimasV2.md) (*note*:
+ * Jan 2018 [blog post with instructions for Numato Mimas v2 and Digilent Arty
+   A7](http://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/),
+   using `timvideos/litex-buildenv` (currently more maintained than the
+   `fupy` litex environment).
+
+ * Older [detailed instructions for the MimasV2](MimasV2.md) (*note*:
    since this was written the repository has been renamed from `upy-fpga`
-   to `fupy`, so the instructions will need translating)
+   to `fupy` and the build process has been streamlined; see blog post
+   above)
+
 
 ### Developing in MicroPython environment
 
