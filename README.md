@@ -7,23 +7,28 @@
 
 The aim of this project is to make MicroPython run on FPGAs using the [LiteX](https://github.com/enjoy-digital/litex) & [Migen+MiSoC](http://m-labs.hk/gateware.html) technologies. This allows you to do full stack development (FPGA gateware & soft CPU firmware) in Python!
 
+Our MicroPython fork is at:
+
+[https://github.com/fupy/micropython](https://github.com/fupy/micropython)
+
+with the port files in `ports/fupy`.
+
 ## Gateware
 
 `Gateware` is the name we use for the hardware code that is loaded onto the FPGA that MicroPython runs on.
 
-For MicroPython development we use a slightly modified version of the [`HDMI2USB-litex-firmware`](https://github.com/timvideos/HDMI2USB-litex-firmware) from the [HDMI2USB project](https://hdmi2usb.tv).
+For MicroPython development we use a the [TimVideos
+`litex-buildenv`](https://github.com/timvideos/litex-buildenv/) from the
+[TimVideos Project](https://code.timvideos.us/home/), which also produces
+[HDMI2USB](https://hdmi2usb.tv/).
 
 ## Getting Started
 
- * Jan 2018 [blog post with instructions for Numato Mimas v2 and Digilent Arty
-   A7](http://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/),
-   using `timvideos/litex-buildenv` (currently more maintained than the
-   `fupy` litex environment).
+ * Aug 2018 - [HowTo FμPy on Digilent Arty A7](https://github.com/timvideos/litex-buildenv/wiki/HowTo-FuPy-on-a-Digilent-Arty-A7)
 
- * Older [detailed instructions for the MimasV2](MimasV2.md) (*note*:
-   since this was written the repository has been renamed from `upy-fpga`
-   to `fupy` and the build process has been streamlined; see blog post
-   above)
+ * Jan 2018 -- [long blog post with instructions for Numato Mimas v2 and
+   Digilent Arty A7](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/),
+   using `timvideos/litex-buildenv`.
 
 
 ### Developing in MicroPython environment
@@ -35,11 +40,12 @@ For MicroPython development we use a slightly modified version of the [`HDMI2USB
  * Compile micropython
  * Load micropython
 
-### Developing in HDMI2USB LiteX environment
+### Developing in the `litex-buildenv` environment
 
  1. Follow [getting started instructions](https://github.com/fupy/upy-fpga-litex-gateware/blob/master/getting-started.md) to setup gateware environment.
  2. Enter the gateware environment with ./scripts/enter-env.sh
- 3. Set PLATFORM and TARGET correctly - IE "export PLATFORM=mimasv2" if using the MimasV2
+ 3. Set PLATFORM and TARGET correctly - eg
+    "export PLATFORM=mimasv2" if using the MimasV2
  4. Build the gateware with `make gateware`
  5. Run `./scripts/build-micropython.sh`
 
@@ -47,7 +53,7 @@ This will give you an image for your target at `./build/$PLATFORM_$TARGET_lm32/m
 
 #### Running MicroPython inside QEmu environment
 
-The HDMI2USB LiteX environment provides some limited QEmu emulation of the FPGA gateware, this means you can test your code without needing hardware.
+The `litex-buildenv` LiteX environment provides some limited QEmu emulation of the FPGA gateware, this means you can test your code without needing hardware.
 
 It can be used with the MicroPython image by running `./scripts/build-qemu.sh` and then replacing `-kernel qemu.bin` with `-kernel micropython.bin` in the last command.
 
@@ -66,6 +72,8 @@ See the [TimVideos' QEmu for LiteX GitHub Repo](https://github.com/timvideos/qem
 ## Current Targets
 
 ### Hardware Targets
+
+ * [Arty A7](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists/) -- $100 USD, Artix 7 board with DDR memory
 
  * [MimasV2](http://numato.com/mimas-v2-spartan-6-fpga-development-board-with-ddr-sdram/) - $50 USD, Spartan 6 board with DDR memory.<br>![Mimas V2 Image](img/mimasv2.png)
 
